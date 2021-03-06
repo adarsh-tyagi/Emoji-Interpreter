@@ -105,7 +105,7 @@ var emojiOtherDict = {
   "😏": "Smirking Face",
 };
 
-var emojiOne = Object.keys(emojiDictionary);
+//var emojiOne = Object.keys(emojiDictionary);
 var emojiTwo = Object.keys(emojiOtherDict);
 
 export default function App() {
@@ -115,11 +115,11 @@ export default function App() {
     var input = event.target.value;
     var meaning = emojiDictionary[input];
 
-    if (input == "") {
+    if (input === "") {
       meaning = "< No emoji entered >";
     }
 
-    if (meaning == undefined) {
+    if (meaning === undefined) {
       meaning = "Unavailable";
     }
 
